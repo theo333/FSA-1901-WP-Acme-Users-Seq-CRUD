@@ -2,7 +2,11 @@
 ### View live on Heroku  
 https://acme-users-seq-crud-tm.herokuapp.com/
 
-### Technologiies Used
+### Project Details
+- No beginning repo
+- Replicate this:  http://profs-acme-users-seq.herokuapp.com/users
+  
+### Technologies and Concepts Used
 - Node.js
 - Express
   - BodyParser
@@ -11,4 +15,5 @@ https://acme-users-seq-crud-tm.herokuapp.com/
 - CRUD
 - Sequelize
   - Validation (need to refactor this part)
+- Processing form data
 - Deploy to Heroku
