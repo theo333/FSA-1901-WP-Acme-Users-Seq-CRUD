@@ -8,6 +8,7 @@ const User = conn.define('user', {
 
 const syncAndSeed = () => {
 	conn.sync( { force: true } )
+		//* for test seeding purposes
 		// .then(() => {
 		// 	User.create({
 		// 		firstName: 'Joe',

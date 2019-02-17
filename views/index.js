@@ -1,11 +1,9 @@
 
 module.exports = (users, userId) => {
+	// if userId, then display form for PUT method 
 	if (userId) {
-		// console.log('userId', userId);
-		// console.log('users[1].id' , users[1].id);
 		var _user = users.find( user => user.id === userId*1);
-		// console.log('_user', _user);
-		// console.log(users[1].firstName);
+
 		var form = `
 			<form method="post" action="/users/${userId}/?_method=put">
 				<input type="text" name="firstName" placeholder="first name" value="${_user.firstName}">
@@ -15,6 +13,7 @@ module.exports = (users, userId) => {
 			</form>
 		`;
 	} else {
+		// action="/users/somethngs"  -> somethngs - ?? how to get user id ?
 		var form = `
 			<form method="post" action="/users/somethngs">
 				<input type="text" name="firstName" placeholder="first name">
